@@ -1,0 +1,74 @@
+html{
+	background-color: #F2F2F2;
+	width: 100%;
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+header{
+	margin: 30px;
+	color: orange;
+}
+
+a{
+	text-decoration: none;
+	color: orange;
+	font-size: 40px;
+	
+}
+
+h3{
+	text-align: center;
+
+}
+
+div{
+	color:#2F4F4F ;
+	background-color: #00A899;	
+	font-weight: bold;
+}
+
+.our{ /**** Our Team ****/
+	margin: 0px;
+	padding: 5px;
+	font-size:30px; 
+	font-weight: bolder;
+	
+}
+
+section{
+	background-color: #00A899;
+	display: flex;
+	justify-content: space-between;
+}
+
+figcaption{
+	text-align: center;
+	color: white;
+}
+
+
+footer{
+	background-color: #F2F2F2;
+}
+
+
+button{
+	margin:40%; /*** button in der mitte ***/
+	text-align: center; /*** text vombutton in der mitte ***/
+	margin-top: 25px; /*** Außenabstand nach oben ****/
+	padding: 5px 15px; /*** 10px unten&oben und 15 links&rechts innerhalb von button***/
+	background-color: white;
+
+	border-radius: 10px;
+}
+
+.button1{ 
+	font-size: 22px;
+	color: #2F4F4F;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+
+}
+

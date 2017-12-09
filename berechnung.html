@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>index</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="berechnung.css">
+    </head>
+    <body>
+
+    <header id="header">
+        <a href="index.html">Insurance <b>Company</b></a>
+    </header>
+        <div class="grBox">
+            <div>
+                <label>Your Name:</label>
+                <input type="text" class="text" id="name" value=""  style=" width: 155px; height: 25px; border-radius: 5px;">
+            </div>
+            <div >
+                <label> Age of car:</label>
+                <input type="text" class="text" id="age" value=""  style=" width: 155px; height: 25px; border-radius: 5px;">
+            </div>
+
+            <div >
+                <label>Country:</label>
+                <select id="country">
+                            <option>Austria</option>
+                             <option>Germany</option>
+                             <option>Italy</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Horsepower:</label>
+                <input type="text" id="horsepower" value="" style=" width: 155px; height: 25px; border-radius: 5px;">
+            </div>
+
+            <div  style="margin-left: 230px;">
+                
+                <button class="button2" onclick="totalSum()" > calculate </button>
+                
+            </div>
+
+        </div>
+
+        <footer >
+            <p class="foo2" id="print"> Printed calculation goes here </p>
+        </footer>
+
+        <script>
+            function totalSum() {
+
+             var name = document.getElementById('name').value;
+             var  age = document.getElementById('age').value;
+             var country = document.getElementById('country').option;
+             var horsepower = document.getElementById('horsepower').value;
+             var versicherung = ((Number(horsepower)*100) / Number(age)) + 150;
+             console.log(versicherung);
+
+             document.getElementById('print').innerHTML = versicherung;
+          }
+        </script>
+
+    </body>
+</html>
